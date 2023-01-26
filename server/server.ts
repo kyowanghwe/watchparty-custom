@@ -126,7 +126,7 @@ app.post('/subtitle', async (req, res) => {
   const data = req.body;
   try {
     fs.writeFileSync(
-      '/workspace/watchparty/public/subtitle.srt',
+      '/workspace/watchparty-custom/public/subtitle.srt',
       data.toString()
     );
   } catch (err) {
